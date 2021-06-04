@@ -1,0 +1,54 @@
+body {
+    /* a organização do CSS deve ser semelhante e obedecer a ordem do HTML */
+}
+
+#banner {
+    width: 100%;
+}
+
+.main {
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.maintitle {
+    padding-left: 20px;
+}
+
+.titlecenter {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#mission {
+    /* identificador é marcado pelo jogo da velha  */
+    font-size: 20px;
+}
+
+em strong {
+    /*  todos as tag strong que estão dentro das tags em  */
+    color: #FF0000;
+}
+
+.items {
+    font-style: italic;
+}
+
+.benefits {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imgbenefits {
+    width: 50%;
+}
