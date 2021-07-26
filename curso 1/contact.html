@@ -37,9 +37,28 @@
             <label for="phoneNumber">Telefone</label>
             <input type="text" id="phoneNumber">
 
-            <input type="submit" value="Enviar formulário">
-            <!--o "valor" força a deixar o texto do input como "enviar formulario" -->
-            <!--aparece o botão enviar-->
+            <label for="message">Mensagem</label>
+            <textarea cols="70" rows="10" id="message">
+            </textarea>
+            <!--quantidades: cols - colunas, rows - linhas-->
+            <!--tag que cria uma caixa de texto-->
+            <div>
+                <p>Como prefere nosso contato?</p>
+                <label for="radioEmail">Email</label>
+                <input type="radio" name="contact" value="email" id="radioEmail">
+                <!--cria alternativas pro usuário marcar-->
+                <!--atributo name faz com que apenas uma opção seja marcada-->
+                <label for="radioPhone">Telefone</label>
+                <input type="radio" name="contact" value="telefone" id="radioPhone">
+
+                <label for="radioWhatsapp">WhatsApp</label>
+                <input type="radio" name="contact" value="telefone" id="radioWhatsapp">
+
+                <input type="submit" value="Enviar formulário">
+                <!--o "valor" força a deixar o texto do input como "enviar formulario" -->
+                <!--aparece o botão enviar-->
+            </div>
+            <label> <input type ="checkbox"> Gostaria de receber nossas novidades por email?</label>
         </form>
     </main>
 
