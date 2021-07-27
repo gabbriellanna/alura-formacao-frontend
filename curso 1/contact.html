@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8>">
+    <meta charset="UTF-8">
     <title>Contato - Barbearia Alura</title>
     <link rel="stylesheet" href="reset.css">
     <!--É muito importante o arquivo reset.css vir antes do arquivo de estilização da página. Se vier depois, vai limpar todo o trabalho feito pelo desenvolvedor.-->
@@ -53,7 +53,7 @@
                 <label for="radioPhone"><input type="radio" name="contact" value="telefone" id="radioPhone">Telefone</label>
                 <label for="radioWhatsapp"><input type="radio" name="contact" value="telefone" id="radioWhatsapp">WhatsApp</label>
             </fieldset>
-            <label class="checkbox"> <input type ="checkbox"> Gostaria de receber nossas novidades por email?</label>
+
 
             <fieldset>
                 <legend>Qual horário prefere ser atendido?</legend>
@@ -63,9 +63,11 @@
                 <option>Tarde</option>
                 <option>Noite</option>
                 <!--Tags option criam as opções que o usuário deve clicar-->
-            </select>
+                </select>
             </fieldset>
-            <input type="submit" value="Enviar formulário">
+
+            <label class="checkbox"> <input type ="checkbox"> Gostaria de receber nossas novidades por email?</label>
+            <input type="submit" value="Enviar formulário" class="send">
             <!--o "valor" força a deixar o texto do input como "enviar formulario" -->
             <!--aparece o botão enviar-->
 

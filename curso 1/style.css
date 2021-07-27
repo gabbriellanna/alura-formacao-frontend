@@ -124,3 +124,23 @@ form legend {
 .checkbox {
     margin: 20px 0;
 }
+
+.send {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    /*todos os elementos que possuem transição são alterados quando colocamos all*/
+    cursor: pointer;
+}
+
+.send:hover {
+    background: darkorange;
+    transform: scale(1.2);
+    /*se não quisermos que uma propriedade sobrescreva a outra podemos colocar várias configurações na mesma propriedade*/
+}
