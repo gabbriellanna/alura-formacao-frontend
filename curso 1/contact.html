@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="box">
             <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
@@ -70,7 +69,31 @@
             <input type="submit" value="Enviar formulário" class="send">
             <!--o "valor" força a deixar o texto do input como "enviar formulario" -->
             <!--aparece o botão enviar-->
-
+            <table>
+                <!--table cria tabela, tr cria a linha (table row) e td cria celula, thead cria o cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <!--th é mais propício aqui pq é o head da table-->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--conteúdo da tabela, fica mais semantico-->
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
         </form>
     </main>
 
