@@ -13,7 +13,7 @@
 
     <header>
         <div class="box">
-            <h1><img src="logo.png"></h1>
+            <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -28,42 +28,52 @@
             <!--Tag específica para forms. -->
             <label for="name">Nome e sobrenome </label>
             <!-- label for significa que ele é o label para o id name-->
-            <input type="text" id="name">
-            <!--normalmente é único e possui apenas uma entrada, por isso usamos ID-->
+            <input type="text" id="name" class="default-input" required>
+            <!--colocamos a palavra reservada required para obrigar o usuário a preencher o campo-->
+            <!--o input normalmente é único e possui apenas uma entrada, por isso usamos ID-->
 
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input type="email" id="email" class="default-input" required placeholder="seuemail@dominio.com">
 
             <label for="phoneNumber">Telefone</label>
-            <input type="text" id="phoneNumber">
-
+            <input type="tel" id="phoneNumber" class="default-input" required placeholder="(XX) XXXXX-XXXX">
+            <!--placeholder dá a sugestão pro usuário de como o formulário deve ser preenchido-->
             <label for="message">Mensagem</label>
-            <textarea cols="70" rows="10" id="message">
+            <textarea cols="70" rows="10" id="message" class="default-input">
             </textarea>
             <!--quantidades: cols - colunas, rows - linhas-->
             <!--tag que cria uma caixa de texto-->
-            <div>
-                <p>Como prefere nosso contato?</p>
-                <label for="radioEmail">Email</label>
-                <input type="radio" name="contact" value="email" id="radioEmail">
+            <fieldset>
+                <!--agrupa infos de formulario-->
+                <!--tag legend é o titulo do formulário, não se usa p-->
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radioEmail"><input type="radio" name="contact" value="email" id="radioEmail">Email</label>
                 <!--cria alternativas pro usuário marcar-->
                 <!--atributo name faz com que apenas uma opção seja marcada-->
-                <label for="radioPhone">Telefone</label>
-                <input type="radio" name="contact" value="telefone" id="radioPhone">
+                <label for="radioPhone"><input type="radio" name="contact" value="telefone" id="radioPhone">Telefone</label>
+                <label for="radioWhatsapp"><input type="radio" name="contact" value="telefone" id="radioWhatsapp">WhatsApp</label>
+            </fieldset>
+            <label class="checkbox"> <input type ="checkbox"> Gostaria de receber nossas novidades por email?</label>
 
-                <label for="radioWhatsapp">WhatsApp</label>
-                <input type="radio" name="contact" value="telefone" id="radioWhatsapp">
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                <!--tag pra criar um formulario parecido com menu dropdown. atenção menudropdown =/= da tag select-->
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                <!--Tags option criam as opções que o usuário deve clicar-->
+            </select>
+            </fieldset>
+            <input type="submit" value="Enviar formulário">
+            <!--o "valor" força a deixar o texto do input como "enviar formulario" -->
+            <!--aparece o botão enviar-->
 
-                <input type="submit" value="Enviar formulário">
-                <!--o "valor" força a deixar o texto do input como "enviar formulario" -->
-                <!--aparece o botão enviar-->
-            </div>
-            <label> <input type ="checkbox"> Gostaria de receber nossas novidades por email?</label>
         </form>
     </main>
 
     <footer>
-        <img src="logo-branco.png">
+        <img src="logo-branco.png" alt="Logo da Barbearia Alura">
         <p class="copyright"> &copy; Copyright Barbearia Alura - 2021</p>
         <!--pra ver caracteres especiais, consultar o site unicode -->
 
